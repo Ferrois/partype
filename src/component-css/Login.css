@@ -1,0 +1,63 @@
+.loginContainer {
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: fixed;
+  -webkit-transition: 2s;
+  transition: 2s;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.loginContainerLogged {
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: fixed;
+  -webkit-transition: 2s;
+  transition: 2s;
+  -webkit-transform: translateY(-110vh);
+          transform: translateY(-110vh);
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.logo {
+  font-size: 5em;
+  color: white;
+  background-color: rgba(0, 0, 255, 0.3);
+  margin: 2px;
+}
+
+@media screen and (max-width: 400px) {
+  .logo {
+    font-size: 3.5em;
+  }
+}
+/*# sourceMappingURL=Login.css.map */
