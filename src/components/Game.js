@@ -62,6 +62,7 @@ function UsersTray(props) {
   useEffect(() => {
     socket.on("gameData", gameData => {
       let playerNames = [];
+      console.log(gameData)
       for(var playerId in Object.keys(gameData)){
          playerNames.push(Object.values(gameData)[playerId]["name"]);
       }

@@ -65,8 +65,6 @@ class InputName extends Component {
         })
     }
 
-
-
     establishUsername(e){
         if (this.state.username.length < 3 || this.state.username.length > 12){
             alert("Please pick a name between 3 and 12 characters!!")
@@ -85,10 +83,10 @@ class InputName extends Component {
 
     render() {
         return <div>
-            <input type={'text'} placeholder='Input Name' value={this.state.username} onChange={e => this.updateUsername(e)}>
+            <input type={'text'} placeholder='Input Name' value={this.state.username} onChange={e => this.updateUsername(e)} className='loginUsernameInput'>
 
             </input>
-            <button onClick={e => this.establishUsername(e)}>Go</button>
+            <button onClick={e => this.establishUsername(e)} className='loginUsernameSubmit'>Go</button>
         </div>
     }
 }
